@@ -24,16 +24,8 @@
   <p class="sub">App</p>
   <p class="tagline">Using technology to make things simple.</p>
   <a class="btn btn-apple" href="https://apps.apple.com/gb/app/design-manager-construction/id6740915832">Download on the App Store</a>
-  <a class="btn btn-google" href="https://play.google.com/store/apps/details?id=uk.co.mcapp.android6694f75c57624" id="google-btn">Get it on Google Play</a>
+  <a class="btn btn-google" href="market://details?id=uk.co.mcapp.android6694f75c57624">Get it on Google Play</a>
   <p class="note">Tap the button for your device</p>
 </div>
-<script>
-  var ua = navigator.userAgent || navigator.vendor || window.opera;
-  if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
-    window.location.href = "https://apps.apple.com/gb/app/design-manager-construction/id6740915832";
-  } else if (/android/i.test(ua)) {
-    window.location.href = "intent://details?id=uk.co.mcapp.android6694f75c57624#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Duk.co.mcapp.android6694f75c57624;end";
-  }
-</script>
 </body>
 </html>
