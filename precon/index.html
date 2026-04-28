@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Download Preconstruction App</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#FFF91D; color:#000000; font-family:-apple-system,BlinkMacSystemFont,sans-serif; min-height:100vh; display:flex; align-items:center; justify-content:center; text-align:center; padding:32px 24px; }
+    .container { max-width:400px; width:100%; }
+    h1 { font-size:2rem; font-weight:700; margin-bottom:6px; }
+    .sub { font-size:1.1rem; font-weight:300; color:rgba(0,0,0,0.6); margin-bottom:10px; }
+    .tagline { font-size:0.95rem; font-weight:300; color:rgba(0,0,0,0.4); margin-bottom:36px; }
+    .btn { display:block; width:100%; padding:18px 24px; border-radius:14px; font-size:1.1rem; font-weight:600; text-decoration:none; margin-bottom:14px; }
+    .btn-apple { background:#000000; color:#FFF91D; }
+    .btn-google { background:rgba(0,0,0,0.08); color:#000000; border:2px solid rgba(0,0,0,0.3); }
+    .note { font-size:0.8rem; color:rgba(0,0,0,0.4); margin-top:24px; }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Preconstruction</h1>
+  <p class="sub">App</p>
+  <p class="tagline">Using technology to make things simple.</p>
+  <a class="btn btn-apple" href="https://apps.apple.com/gb/app/bid-manager-construction/id6740397076">Download on the App Store</a>
+  <a class="btn btn-google" href="https://play.google.com/store/apps/details?id=uk.co.mcapp.android6694f4ed10419">Get it on Google Play</a>
+  <p class="note">Tap the button for your device</p>
+</div>
+<script>
+  var ua=navigator.userAgent||navigator.vendor||window.opera;
+  if(/iPad|iPhone|iPod/.test(ua)&&!window.MSStream){window.location.href="https://apps.apple.com/gb/app/bid-manager-construction/id6740397076";}
+  else if(/android/i.test(ua)){window.location.href="https://play.google.com/store/apps/details?id=uk.co.mcapp.android6694f4ed10419";}
+</script>
+</body>
+</html>
