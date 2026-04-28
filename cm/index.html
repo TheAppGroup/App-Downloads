@@ -32,13 +32,7 @@
   if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
     window.location.href = "https://apps.apple.com/gb/app/design-manager-construction/id6740915832";
   } else if (/android/i.test(ua)) {
-    var start = Date.now();
-    window.location.href = "market://details?id=uk.co.mcapp.android6694f75c57624";
-    setTimeout(function() {
-      if (Date.now() - start < 2000) {
-        window.location.href = "https://play.google.com/store/apps/details?id=uk.co.mcapp.android6694f75c57624";
-      }
-    }, 1500);
+    window.location.href = "intent://details?id=uk.co.mcapp.android6694f75c57624#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Duk.co.mcapp.android6694f75c57624;end";
   }
 </script>
 </body>
